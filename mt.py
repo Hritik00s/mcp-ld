@@ -5,7 +5,7 @@ Exit codes: 0 success, 1 the tool reported a failure, 2 usage/transport/protocol
 """
 import argparse, json, os, re, sys, urllib.request, urllib.error
 
-DEFAULT_URL = "http://127.0.0.1:8083"   # or http://127.0.0.1:8082/mcp
+DEFAULT_URL = "http://127.0.0.1:8082/mcp"   # or http://127.0.0.1:8082/mcp
 AGENT_CONFIG = os.environ.get("OPENCODE_CONFIG") or "/tmp/vega-home-vega/.vega/opencode.json"
 
 MODES = {  # canonical name -> short aliases
